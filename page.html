@@ -1,0 +1,185 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
+<script type="text/javascript" src="inc/ajax.js"></script>
+<!-- Meta Data -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="en">
+<meta name="distribution" content="Global">
+<meta name="description" content="ROM downloads for free, all the classics!">
+<meta name="keywords" content="delta emulator roms, retroarch roms, delta emulator, delta roms, roms, nes roms, saturn roms, genesis roms, game gear roms, master system roms, gba roms, mame roms, sega cd roms, saturn isos, saturn roms, dreamcast isos, dreamcast roms, ngcd isos, ngcd roms, neo-geo roms, nintendo 64, n64, snes roms, gbx roms, atari roms">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="30 days">
+
+<title>edge|emulation | your source for roms</title>
+<link href="/css/style.css" type="text/css" rel="stylesheet">
+
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-284371G4Y5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-284371G4Y5');
+</script>
+
+</head>
+
+<body onload="breakout()">
+
+<div id="page_wrapper">
+
+<div id="header_wrapper">
+
+<div id="header">
+
+<img src="/img/edgelogo.gif" alt="edge|emulation - your source for roms">
+
+</div>
+
+<div id="navcontainer">
+
+</div>
+
+</div>
+
+<div id="left_side">
+<h3>News</h3>
+<p align="center">
+<u>2024/06/14</u><br>
+Dreamcast set is updated, 200G of new games!<br><br>
+<u>2023/12/26</u><br>
+a boxing day miracle! need MAME ROMs? visit <a href="https://mdk.cab">mdk.cab</a>!<br><br>
+<u>2023/11/05</u><br>
+MAME set removed to make room for new and exciting things! The next chapter of edge|emulation is coming soon.<br><br>
+<u>2022/01/19</u><br>
+MAME updated to .239. Download counts are reset as a result, sorry!<br><br>
+<u>2021/09/24</u><br>
+New shade of paint, made the site more mobile-friendly. Gamecube set is being updated to 1G1R in RVZ format. Enjoy!<br><br>
+<u>2021/05/15</u><br>
+Improved the search function ever so slightly :)<br><br>
+<u>2021/01/20</u><br>
+Panasonic 3DO set updated. Doubled the amount of games and converted to CHD.<br><br>
+<u>2021/01/13</u><br>
+Sega CD set updated. 60G of games added. NGCD set replaced.<br><br>
+<u>2020/12/12</u><br>
+Holiday time again! We've doubled the bandwidth to 500mbps, updated the MAME set to .226, and re-added the Saturn collection. More updates coming soon!<br>
+</p>
+</div>
+
+
+<div id="content">
+
+
+	<h3><a href="/">ROMs</a> / Search for a specific ROM:</h3><br>
+	<form name="form" method="get" onsubmit="javascript:showResults(q.value,system.value)" action="javascript:showResults(q.value,system.value)">
+		<input type="text" name="q">
+		<select name="system">
+		<option value="all">-All Systems-</option>
+		<option value="cpc">Amstrad CPC</option>
+		<option value="2600">Atari 2600</option>
+		<option value="5200">Atari 2600</option>
+		<option value="7800">Atari 7800</option>
+		<option value="jaguar">Atari Jaguar</option>
+		<option value="lynx">Atari Lynx</option>
+		<option value="c64">Commodore 64</option>
+		<option value="amiga">Commodore Amiga</option>
+		<option value="wsx">Bandai Wonderswan</option>
+		<option value="msx">Microsoft MSX1/MS2</option>
+		<option value="pce">NEC TurboGrafx 16 / PC Engine</option>
+		<option value="pcecd">NEC TurboGrafx 16 /PC Engine CD</option>
+		<option value="n64">Nintendo 64</option>
+		<option value="nds">Nintendo DS</option>
+		<option value="nes">Nintendo Entertainment System</option>
+		<option value="gba">Nintendo Game Boy Advance</option>
+		<option value="gbc">Nintendo Game Boy Color</option>
+		<option value="gc">Nintendo Gamecube</option>
+		<option value="snes">Nintendo Super NES</option>
+		<option value="vb">Nintendo Virtual Boy</option>
+		<option value="3do">Panasonic 3DO</option>
+		<option value="cdi">Philips CDi</option>
+		<option value="32x">Sega 32X</option>
+		<option value="segacd">Sega CD</option>
+		<option value="dc">Sega Dreamcast</option>
+		<option value="gg">Sega Game Gear</option>
+		<option value="md">Sega Genesis / Megadrive</option>
+		<option value="sms">Sega Master System / Mark III</option>
+        <option value="saturn">Sega Saturn</option>
+		<option value="ngcd">SNK Neo Geo CD</option>
+		<option value="ngpc">SNK Neo Geo Pocket Color</option>
+		</select>
+		<input type="button" name="Submit" onclick="showResults(q.value,system.value)" value="Search">
+	</form>
+	<br>
+	<div id="txtHint">
+	<h3>Or browse by category:</h3>
+	<table class="roms">
+	<tbody><tr>
+<td><a href="browse-cpc.htm">Amstrad CPC</a></td>
+<td><a href="browse-2600.htm">Atari 2600</a></td>
+</tr><tr>
+<td><a href="browse-5200.htm">Atari 5200</a></td>
+<td><a href="browse-7800.htm">Atari 7800</a></td>
+</tr><tr>
+<td><a href="browse-jaguar.htm">Atari Jaguar</a></td>
+<td><a href="browse-lynx.htm">Atari Lynx</a></td>
+</tr><tr>
+<td><a href="browse-c64.htm">Commodore 64</a></td>
+<td><a href="browse-amiga.htm">Commodore Amiga</a></td>
+</tr><tr>
+<td><a href="browse-wsx.htm">Bandai Wonderswan Color</a></td>
+<td><a href="browse-msx.htm">Microsoft MSX1/2</a></td>
+</tr><tr>
+<td><a href="browse-pce.htm">NEC TurboGrafx 16 / PC Engine</a></td>
+<td><a href="browse-pcecd.htm">NEC TurboGrafx 16 / PC Engine CD</a></td>
+</tr><tr>
+<td><a href="browse-n64.htm">Nintendo 64 (N64)</a></td>
+<td><a href="browse-nds.htm">Nintendo DS (NDS)</a></td>
+</tr><tr>
+<td><a href="browse-nes.htm">Nintendo Entertainment System (NES)</a></td>
+<td><a href="browse-gba.htm">Nintendo Gameboy Advance (GBA)</a></td>
+</tr><tr>
+<td><a href="browse-gbc.htm">Nintendo Gameboy (GBC)</a></td>
+<td><a href="browse-gc.htm">Nintendo Gamecube (GC)</a></td>
+</tr><tr>
+<td><a href="browse-snes.htm">Super Nintendo (SNES)</a></td>
+<td><a href="browse-vb.htm">Nintendo Virtualboy (VB)</a></td>
+</tr><tr>
+<td><a href="browse-3do.htm">Panasonic 3DO</a></td>
+<td><a href="browse-cdi.htm">Philips CDi</a></td>
+</tr><tr>
+<td><a href="browse-32x.htm">Sega 32X</a></td>
+<td><a href="browse-segacd.htm">Sega CD</a></td>
+</tr><tr>
+<td><a href="browse-dc.htm">Sega Dreamcast (DC)</a></td>
+<td><a href="browse-gg.htm">Sega Game Gear (GG)</a></td>
+</tr><tr>
+<td><a href="browse-md.htm">Sega Genesis / Megadrive (GG / MD)</a></td>
+<td><a href="browse-sms.htm">Sega Master System / Mark III (SMS)</a></td>
+</tr><tr>
+<td><a href="browse-saturn.htm">Sega Saturn</a></td>
+<td><a href="browse-ngpc.htm">SNK Neo Geo Pocket Color (NGPC)</a></td>
+</tr><tr>
+<td><a href="browse-ngcd.htm">SNK Neo Geo CD (NGCD)</a></td>
+</tr>
+		</tbody></table>
+	<br>
+
+
+	</div>
+</div>
+
+<div id="footer">
+
+ROMs: 34189 | Downloads: 81755906 | 
+<a href="https://fb.me/edgeemu">Like us on Facebook!</a> | <a href="https://twitter.com/edgeemu">Follow us on Twitter!</a>
+</div>
+
+</div>
+
+
+
+
+
+</body></html>
